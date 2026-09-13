@@ -1,0 +1,14 @@
+{
+  "customer_id": "C-1001",
+  "name": "Priya Sharma",
+  "email": "priya.sharma@example.com",
+  "phone_last4": "4417",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "pin_code": "411004",
+  "region": "metro",
+  "tier": "plus",
+  "plus_since": "2026-02-27",
+  "joined_at": "2024-03-29",
+  "wallet_balance_inr": 250
+}

@@ -1,0 +1,959 @@
+[
+  {
+    "order_id": "MRD-700100",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-PH-1001",
+        "name": "Meridian Pulse 5G (128GB, Slate)",
+        "category": "phone",
+        "qty": 1,
+        "unit_price_inr": 18999
+      }
+    ],
+    "subtotal_inr": 18999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 18999,
+    "payment_method": "card",
+    "placed_at": "2026-09-08",
+    "promised_by": "2026-09-12",
+    "dispatched_at": "2026-09-09",
+    "delivered_at": "2026-09-12",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - returnable",
+    "tracking_id": "MRDTRK900100",
+    "last_tracking_update": "2026-09-09"
+  },
+  {
+    "order_id": "MRD-700103",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AU-4001",
+        "name": "Meridian Aura Buds",
+        "category": "audio",
+        "qty": 1,
+        "unit_price_inr": 3499
+      }
+    ],
+    "subtotal_inr": 3499,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 3499,
+    "payment_method": "upi",
+    "placed_at": "2026-09-06",
+    "promised_by": "2026-09-07",
+    "dispatched_at": "2026-09-07",
+    "delivered_at": "2026-09-10",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - cheap, returnable",
+    "tracking_id": "MRDTRK900107",
+    "last_tracking_update": "2026-09-07"
+  },
+  {
+    "order_id": "MRD-700106",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-LT-2001",
+        "name": "Meridian Slate 14 (i5, 16GB, 512GB)",
+        "category": "laptop",
+        "qty": 1,
+        "unit_price_inr": 62999
+      }
+    ],
+    "subtotal_inr": 62999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 62999,
+    "payment_method": "emi",
+    "placed_at": "2026-09-02",
+    "promised_by": "2026-09-06",
+    "dispatched_at": "2026-09-03",
+    "delivered_at": "2026-09-06",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - high value",
+    "tracking_id": "MRDTRK900114",
+    "last_tracking_update": "2026-09-03"
+  },
+  {
+    "order_id": "MRD-700109",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AX-1101",
+        "name": "Meridian 65W GaN Charger",
+        "category": "accessory",
+        "qty": 2,
+        "unit_price_inr": 1999
+      }
+    ],
+    "subtotal_inr": 3998,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 3998,
+    "payment_method": "upi",
+    "placed_at": "2026-08-28",
+    "promised_by": "2026-09-01",
+    "dispatched_at": "2026-08-29",
+    "delivered_at": "2026-09-01",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - accessory",
+    "tracking_id": "MRDTRK900121",
+    "last_tracking_update": "2026-08-29"
+  },
+  {
+    "order_id": "MRD-700112",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-WR-5001",
+        "name": "Meridian Arc Watch 2",
+        "category": "wearable",
+        "qty": 1,
+        "unit_price_inr": 6999
+      }
+    ],
+    "subtotal_inr": 6999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 6999,
+    "payment_method": "card",
+    "placed_at": "2026-08-20",
+    "promised_by": "2026-08-21",
+    "dispatched_at": "2026-08-21",
+    "delivered_at": "2026-08-24",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - near the edge",
+    "tracking_id": "MRDTRK900128",
+    "last_tracking_update": "2026-08-21"
+  },
+  {
+    "order_id": "MRD-700115",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AU-4002",
+        "name": "Meridian Aura Max Over-Ear",
+        "category": "audio",
+        "qty": 1,
+        "unit_price_inr": 8999
+      }
+    ],
+    "subtotal_inr": 8999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 8999,
+    "payment_method": "wallet",
+    "placed_at": "2026-08-13",
+    "promised_by": "2026-08-17",
+    "dispatched_at": "2026-08-14",
+    "delivered_at": "2026-08-17",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "inside 30d - last day but one",
+    "tracking_id": "MRDTRK900135",
+    "last_tracking_update": "2026-08-14"
+  },
+  {
+    "order_id": "MRD-700118",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-TV-6001",
+        "name": "Meridian Vista 43\" 4K Smart TV",
+        "category": "tv",
+        "qty": 1,
+        "unit_price_inr": 27999
+      }
+    ],
+    "subtotal_inr": 27999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 27999,
+    "payment_method": "card",
+    "placed_at": "2026-09-07",
+    "promised_by": "2026-09-11",
+    "dispatched_at": "2026-09-08",
+    "delivered_at": "2026-09-11",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "appliance INSIDE its 7d window",
+    "tracking_id": "MRDTRK900142",
+    "last_tracking_update": "2026-09-08"
+  },
+  {
+    "order_id": "MRD-700121",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-TV-6002",
+        "name": "Meridian Vista Pro 55\" 4K Smart TV",
+        "category": "tv",
+        "qty": 1,
+        "unit_price_inr": 48999
+      }
+    ],
+    "subtotal_inr": 48999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 48999,
+    "payment_method": "netbanking",
+    "placed_at": "2026-09-02",
+    "promised_by": "2026-09-03",
+    "dispatched_at": "2026-09-03",
+    "delivered_at": "2026-09-06",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "appliance OUTSIDE 7d despite Plus",
+    "tracking_id": "MRDTRK900149",
+    "last_tracking_update": "2026-09-03"
+  },
+  {
+    "order_id": "MRD-700124",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-WM-8001",
+        "name": "Meridian TurboWash 7kg",
+        "category": "washing_machine",
+        "qty": 1,
+        "unit_price_inr": 21999
+      }
+    ],
+    "subtotal_inr": 21999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 21999,
+    "payment_method": "emi",
+    "placed_at": "2026-08-30",
+    "promised_by": "2026-09-03",
+    "dispatched_at": "2026-08-31",
+    "delivered_at": "2026-09-03",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "appliance well outside 7d",
+    "tracking_id": "MRDTRK900156",
+    "last_tracking_update": "2026-08-31"
+  },
+  {
+    "order_id": "MRD-700127",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AC-9001",
+        "name": "Meridian Zephyr 1.5T Inverter AC",
+        "category": "ac",
+        "qty": 1,
+        "unit_price_inr": 38999
+      }
+    ],
+    "subtotal_inr": 38999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 38999,
+    "payment_method": "card",
+    "placed_at": "2026-08-22",
+    "promised_by": "2026-08-26",
+    "dispatched_at": "2026-08-23",
+    "delivered_at": "2026-08-26",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "appliance outside 7d, high value",
+    "tracking_id": "MRDTRK900163",
+    "last_tracking_update": "2026-08-23"
+  },
+  {
+    "order_id": "MRD-700130",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-GC-2000",
+        "name": "Meridian Gift Card 2000",
+        "category": "giftcard",
+        "qty": 1,
+        "unit_price_inr": 2000
+      }
+    ],
+    "subtotal_inr": 2000,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 2000,
+    "payment_method": "upi",
+    "placed_at": "2026-09-05",
+    "promised_by": "2026-09-06",
+    "dispatched_at": "2026-09-06",
+    "delivered_at": "2026-09-09",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "gift card - never returnable",
+    "tracking_id": "MRDTRK900170",
+    "last_tracking_update": "2026-09-06"
+  },
+  {
+    "order_id": "MRD-700133",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "HPI-CN-1201",
+        "name": "HP 680 Ink Cartridge (Black)",
+        "category": "consumable",
+        "qty": 1,
+        "unit_price_inr": 899
+      }
+    ],
+    "subtotal_inr": 899,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 899,
+    "payment_method": "upi",
+    "placed_at": "2026-09-03",
+    "promised_by": "2026-09-07",
+    "dispatched_at": "2026-09-04",
+    "delivered_at": "2026-09-07",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "consumable - never returnable",
+    "tracking_id": "MRDTRK900177",
+    "last_tracking_update": "2026-09-04"
+  },
+  {
+    "order_id": "MRD-700136",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-PH-1002",
+        "name": "Meridian Pulse Pro 5G (256GB, Onyx)",
+        "category": "phone",
+        "qty": 1,
+        "unit_price_inr": 34999
+      }
+    ],
+    "subtotal_inr": 34999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 34999,
+    "payment_method": "card",
+    "placed_at": "2026-07-28",
+    "promised_by": "2026-08-01",
+    "dispatched_at": "2026-07-29",
+    "delivered_at": "2026-08-01",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "outside 30d, above the 5000 limit",
+    "tracking_id": "MRDTRK900184",
+    "last_tracking_update": "2026-07-29"
+  },
+  {
+    "order_id": "MRD-700139",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-TB-3001",
+        "name": "Meridian Tab 11 (128GB, Wi-Fi)",
+        "category": "tablet",
+        "qty": 1,
+        "unit_price_inr": 24999
+      }
+    ],
+    "subtotal_inr": 24999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 24999,
+    "payment_method": "emi",
+    "placed_at": "2026-08-04",
+    "promised_by": "2026-08-05",
+    "dispatched_at": "2026-08-05",
+    "delivered_at": "2026-08-08",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "outside 30d, above the limit",
+    "tracking_id": "MRDTRK900191",
+    "last_tracking_update": "2026-08-05"
+  },
+  {
+    "order_id": "MRD-700142",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AX-1104",
+        "name": "Meridian 10000mAh Power Bank",
+        "category": "accessory",
+        "qty": 1,
+        "unit_price_inr": 2499
+      }
+    ],
+    "subtotal_inr": 2499,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 2499,
+    "payment_method": "upi",
+    "placed_at": "2026-08-01",
+    "promised_by": "2026-08-05",
+    "dispatched_at": "2026-08-02",
+    "delivered_at": "2026-08-05",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "outside 30d but only 2499 - still needs approval",
+    "tracking_id": "MRDTRK900198",
+    "last_tracking_update": "2026-08-02"
+  },
+  {
+    "order_id": "MRD-700145",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AX-1102",
+        "name": "Meridian USB-C Cable 1.5m",
+        "category": "accessory",
+        "qty": 2,
+        "unit_price_inr": 699
+      }
+    ],
+    "subtotal_inr": 1398,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 49,
+    "total_inr": 1447,
+    "payment_method": "cod",
+    "placed_at": "2026-07-21",
+    "promised_by": "2026-07-25",
+    "dispatched_at": "2026-07-22",
+    "delivered_at": "2026-07-25",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "outside 30d, tiny value",
+    "tracking_id": "MRDTRK900205",
+    "last_tracking_update": "2026-07-22"
+  },
+  {
+    "order_id": "MRD-700148",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "LNV-LT-4410",
+        "name": "Lenovo IdeaPad Slim 3 (Ryzen 5)",
+        "category": "laptop",
+        "qty": 1,
+        "unit_price_inr": 43990
+      }
+    ],
+    "subtotal_inr": 43990,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 43990,
+    "payment_method": "card",
+    "placed_at": "2026-08-09",
+    "promised_by": "2026-08-10",
+    "dispatched_at": "2026-08-10",
+    "delivered_at": "2026-08-13",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "outside 30d, mid value",
+    "tracking_id": "MRDTRK900212",
+    "last_tracking_update": "2026-08-10"
+  },
+  {
+    "order_id": "MRD-700151",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-RF-7001",
+        "name": "Meridian FrostLine 265L Refrigerator",
+        "category": "refrigerator",
+        "qty": 1,
+        "unit_price_inr": 24999
+      }
+    ],
+    "subtotal_inr": 24999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 24999,
+    "payment_method": "netbanking",
+    "placed_at": "2026-07-03",
+    "promised_by": "2026-07-07",
+    "dispatched_at": "2026-07-04",
+    "delivered_at": "2026-07-07",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "long past every window",
+    "tracking_id": "MRDTRK900219",
+    "last_tracking_update": "2026-07-04"
+  },
+  {
+    "order_id": "MRD-700154",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AU-4001",
+        "name": "Meridian Aura Buds",
+        "category": "audio",
+        "qty": 1,
+        "unit_price_inr": 3499
+      }
+    ],
+    "subtotal_inr": 3499,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 3499,
+    "payment_method": "upi",
+    "placed_at": "2026-08-26",
+    "promised_by": "2026-08-30",
+    "dispatched_at": "2026-08-27",
+    "delivered_at": "2026-08-30",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "troubleshooting: earbud pairing",
+    "tracking_id": "MRDTRK900226",
+    "last_tracking_update": "2026-08-27"
+  },
+  {
+    "order_id": "MRD-700157",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-LT-2001",
+        "name": "Meridian Slate 14 (i5, 16GB, 512GB)",
+        "category": "laptop",
+        "qty": 1,
+        "unit_price_inr": 62999
+      }
+    ],
+    "subtotal_inr": 62999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 62999,
+    "payment_method": "card",
+    "placed_at": "2026-08-17",
+    "promised_by": "2026-08-18",
+    "dispatched_at": "2026-08-18",
+    "delivered_at": "2026-08-21",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "troubleshooting: laptop will not boot",
+    "tracking_id": "MRDTRK900233",
+    "last_tracking_update": "2026-08-18"
+  },
+  {
+    "order_id": "MRD-700160",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-TV-6001",
+        "name": "Meridian Vista 43\" 4K Smart TV",
+        "category": "tv",
+        "qty": 1,
+        "unit_price_inr": 27999
+      }
+    ],
+    "subtotal_inr": 27999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 27999,
+    "payment_method": "card",
+    "placed_at": "2026-08-24",
+    "promised_by": "2026-08-25",
+    "dispatched_at": "2026-08-25",
+    "delivered_at": "2026-08-28",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "troubleshooting: TV wifi ERR-3390",
+    "tracking_id": "MRDTRK900240",
+    "last_tracking_update": "2026-08-25"
+  },
+  {
+    "order_id": "MRD-700163",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-PH-1001",
+        "name": "Meridian Pulse 5G (128GB, Slate)",
+        "category": "phone",
+        "qty": 1,
+        "unit_price_inr": 18999
+      }
+    ],
+    "subtotal_inr": 18999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 18999,
+    "payment_method": "card",
+    "placed_at": "2026-08-31",
+    "promised_by": "2026-09-04",
+    "dispatched_at": "2026-09-01",
+    "delivered_at": "2026-09-04",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "safety: swollen battery",
+    "tracking_id": "MRDTRK900247",
+    "last_tracking_update": "2026-09-01"
+  },
+  {
+    "order_id": "MRD-700166",
+    "customer_id": "C-1001",
+    "status": "delivered",
+    "items": [
+      {
+        "sku": "MRD-AX-1101",
+        "name": "Meridian 65W GaN Charger",
+        "category": "accessory",
+        "qty": 1,
+        "unit_price_inr": 1999
+      }
+    ],
+    "subtotal_inr": 1999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 1999,
+    "payment_method": "upi",
+    "placed_at": "2026-09-09",
+    "promised_by": "2026-09-10",
+    "dispatched_at": "2026-09-10",
+    "delivered_at": "2026-09-13",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "safety: charger overheated",
+    "tracking_id": "MRDTRK900254",
+    "last_tracking_update": "2026-09-10"
+  },
+  {
+    "order_id": "MRD-700169",
+    "customer_id": "C-1001",
+    "status": "placed",
+    "items": [
+      {
+        "sku": "MRD-PH-1002",
+        "name": "Meridian Pulse Pro 5G (256GB, Onyx)",
+        "category": "phone",
+        "qty": 1,
+        "unit_price_inr": 34999
+      }
+    ],
+    "subtotal_inr": 34999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 34999,
+    "payment_method": "card",
+    "placed_at": "2026-09-15",
+    "promised_by": "2026-09-19",
+    "dispatched_at": null,
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "cancellable - placed",
+    "tracking_id": null,
+    "last_tracking_update": null
+  },
+  {
+    "order_id": "MRD-700172",
+    "customer_id": "C-1001",
+    "status": "placed",
+    "items": [
+      {
+        "sku": "MRD-AU-4002",
+        "name": "Meridian Aura Max Over-Ear",
+        "category": "audio",
+        "qty": 1,
+        "unit_price_inr": 8999
+      }
+    ],
+    "subtotal_inr": 8999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 8999,
+    "payment_method": "upi",
+    "placed_at": "2026-09-15",
+    "promised_by": "2026-09-19",
+    "dispatched_at": null,
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "cancellable - placed",
+    "tracking_id": null,
+    "last_tracking_update": null
+  },
+  {
+    "order_id": "MRD-700175",
+    "customer_id": "C-1001",
+    "status": "packed",
+    "items": [
+      {
+        "sku": "MRD-TB-3001",
+        "name": "Meridian Tab 11 (128GB, Wi-Fi)",
+        "category": "tablet",
+        "qty": 1,
+        "unit_price_inr": 24999
+      }
+    ],
+    "subtotal_inr": 24999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 24999,
+    "payment_method": "card",
+    "placed_at": "2026-09-14",
+    "promised_by": "2026-09-18",
+    "dispatched_at": null,
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "cancellable - packed",
+    "tracking_id": null,
+    "last_tracking_update": null
+  },
+  {
+    "order_id": "MRD-700178",
+    "customer_id": "C-1001",
+    "status": "packed",
+    "items": [
+      {
+        "sku": "MRD-AX-1104",
+        "name": "Meridian 10000mAh Power Bank",
+        "category": "accessory",
+        "qty": 1,
+        "unit_price_inr": 2499
+      }
+    ],
+    "subtotal_inr": 2499,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 2499,
+    "payment_method": "upi",
+    "placed_at": "2026-09-14",
+    "promised_by": "2026-09-18",
+    "dispatched_at": null,
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "cancellable - packed",
+    "tracking_id": null,
+    "last_tracking_update": null
+  },
+  {
+    "order_id": "MRD-700181",
+    "customer_id": "C-1001",
+    "status": "shipped",
+    "items": [
+      {
+        "sku": "MRD-LT-2001",
+        "name": "Meridian Slate 14 (i5, 16GB, 512GB)",
+        "category": "laptop",
+        "qty": 1,
+        "unit_price_inr": 62999
+      }
+    ],
+    "subtotal_inr": 62999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 62999,
+    "payment_method": "emi",
+    "placed_at": "2026-09-02",
+    "promised_by": "2026-09-07",
+    "dispatched_at": "2026-09-03",
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "lost in transit - tracking stalled 9 days",
+    "tracking_id": "MRDTRK900289",
+    "last_tracking_update": "2026-09-06"
+  },
+  {
+    "order_id": "MRD-700184",
+    "customer_id": "C-1001",
+    "status": "shipped",
+    "items": [
+      {
+        "sku": "MRD-TV-6001",
+        "name": "Meridian Vista 43\" 4K Smart TV",
+        "category": "tv",
+        "qty": 1,
+        "unit_price_inr": 27999
+      }
+    ],
+    "subtotal_inr": 27999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 27999,
+    "payment_method": "card",
+    "placed_at": "2026-09-12",
+    "promised_by": "2026-09-16",
+    "dispatched_at": "2026-09-13",
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "too late to cancel",
+    "tracking_id": "MRDTRK900296",
+    "last_tracking_update": "2026-09-13"
+  },
+  {
+    "order_id": "MRD-700187",
+    "customer_id": "C-1001",
+    "status": "out_for_delivery",
+    "items": [
+      {
+        "sku": "MRD-WR-5001",
+        "name": "Meridian Arc Watch 2",
+        "category": "wearable",
+        "qty": 1,
+        "unit_price_inr": 6999
+      }
+    ],
+    "subtotal_inr": 6999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 6999,
+    "payment_method": "upi",
+    "placed_at": "2026-09-11",
+    "promised_by": "2026-09-15",
+    "dispatched_at": "2026-09-12",
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "too late to cancel",
+    "tracking_id": "MRDTRK900303",
+    "last_tracking_update": "2026-09-12"
+  },
+  {
+    "order_id": "MRD-700190",
+    "customer_id": "C-1001",
+    "status": "out_for_delivery",
+    "items": [
+      {
+        "sku": "MRD-AU-4001",
+        "name": "Meridian Aura Buds",
+        "category": "audio",
+        "qty": 1,
+        "unit_price_inr": 3499
+      }
+    ],
+    "subtotal_inr": 3499,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 3499,
+    "payment_method": "card",
+    "placed_at": "2026-09-11",
+    "promised_by": "2026-09-15",
+    "dispatched_at": "2026-09-12",
+    "delivered_at": null,
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "too late to cancel",
+    "tracking_id": "MRDTRK900310",
+    "last_tracking_update": "2026-09-12"
+  },
+  {
+    "order_id": "MRD-700193",
+    "customer_id": "C-1001",
+    "status": "cancelled",
+    "items": [
+      {
+        "sku": "MRD-AX-1102",
+        "name": "Meridian USB-C Cable 1.5m",
+        "category": "accessory",
+        "qty": 1,
+        "unit_price_inr": 699
+      }
+    ],
+    "subtotal_inr": 699,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 699,
+    "payment_method": "upi",
+    "placed_at": "2026-09-06",
+    "promised_by": "2026-09-10",
+    "dispatched_at": null,
+    "delivered_at": null,
+    "cancelled_at": "2026-09-06",
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "already cancelled",
+    "tracking_id": null,
+    "last_tracking_update": null
+  },
+  {
+    "order_id": "MRD-700196",
+    "customer_id": "C-1001",
+    "status": "returned",
+    "items": [
+      {
+        "sku": "MRD-PH-1001",
+        "name": "Meridian Pulse 5G (128GB, Slate)",
+        "category": "phone",
+        "qty": 1,
+        "unit_price_inr": 18999
+      }
+    ],
+    "subtotal_inr": 18999,
+    "shipping_fee_inr": 0,
+    "cod_fee_inr": 0,
+    "total_inr": 18999,
+    "payment_method": "card",
+    "placed_at": "2026-07-13",
+    "promised_by": "2026-07-17",
+    "dispatched_at": "2026-07-14",
+    "delivered_at": "2026-07-17",
+    "cancelled_at": null,
+    "shipping_city": "Pune",
+    "shipping_pin": "411004",
+    "_why": "already returned",
+    "tracking_id": "MRDTRK900324",
+    "last_tracking_update": "2026-07-14"
+  }
+]

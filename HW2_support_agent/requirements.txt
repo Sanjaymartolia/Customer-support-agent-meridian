@@ -1,0 +1,32 @@
+# HW2 — Meridian customer-support agent
+#
+# REQUIRES PYTHON 3.10 OR NEWER. gradio, langgraph, langchain-core and
+# langchain-openai all set that floor. On 3.9 pip fails with
+# "Could not find a version that satisfies the requirement gradio>=5.0".
+# Run `python scripts/check_env.py` first — it tells you exactly what to fix.
+#
+#   conda create -n hw2 python=3.11 -y && conda activate hw2
+#   pip install -r requirements.txt
+#
+# Everything here is CPU-only. Chroma's default embedder is a MiniLM running on
+# onnxruntime — no torch, no GPU, no multi-gigabyte download. If your machine
+# already struggles, the only heavy dependency is chromadb.
+
+requests>=2.31
+python-dotenv>=1.0
+
+# retrieval
+chromadb>=0.5,<2          # vector store + default ONNX embedding function
+rank-bm25>=0.2.2          # lexical search
+
+# orchestration
+langgraph>=0.2,<2         # classic StateGraph API; 0.2.x and 1.x both work
+langchain-core>=0.3
+langchain-openai>=0.2     # OpenRouter is OpenAI-compatible
+grandalf>=0.8             # ASCII graph rendering for graph.draw()
+
+# interface
+gradio>=5,<7              # 5.x and 6.x both work; app.py handles the API change
+
+# tests
+pytest>=8.0

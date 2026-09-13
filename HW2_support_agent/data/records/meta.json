@@ -1,0 +1,6 @@
+{
+  "company": "Meridian Electronics",
+  "as_of": "2026-09-15",
+  "currency": "INR",
+  "note": "`as_of` is the simulated present. Every date computation in this homework uses it instead of the real today(), so gold answers about return windows stay valid forever."
+}

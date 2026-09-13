@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+.index/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# run artefacts — regenerate them, do not commit them
+dev_traces.jsonl
+submission.jsonl
+*.log
+
+# never commit this: it is the answer key
+instructor/test_gold.jsonl
