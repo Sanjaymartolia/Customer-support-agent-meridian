@@ -33,7 +33,8 @@ are already written in `policy.py`. You are building the thing that uses them.
 
 import re
 
-from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core import messages
+from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage, AIMessage
 from langgraph.graph import END, StateGraph
 
 from . import config, llm, policy, retrieval
@@ -99,10 +100,14 @@ class SupportGraph:
         graph = StateGraph(SupportState)
         graph.add_node("lookup", self.node_lookup)
         graph.add_node("retrieve", self.node_retrieve)
+        graph.add_node("act", self.node_act)      #Added node for tool invocation
         graph.add_node("respond", self.node_respond)
         graph.set_entry_point("lookup")
         graph.add_edge("lookup", "retrieve")
-        graph.add_edge("retrieve", "respond")
+        graph.add_edge("retrieve", "act")    #Changed from "respond" to "act" to allow for tool invocation before responding
+        # graph.add_edge("act", "respond")     #ADD
+        graph.add_conditional_edges("act", self.route_after_act,
+                                    {"act": "act", "respond": "respond"})
         graph.add_edge("respond", END)
         # TODO 6 — build the real flow. Lecture 8. Three parts, in this order:
         #
@@ -141,14 +146,11 @@ class SupportGraph:
         "which order do you mean?", which is why this program can never produce
         the `needs_info` answer.
         """
-        text = " ".join([as_text(h.get("content")) for h in state.get("history", [])]
-                        + [as_text(state["query"])])
-        facts = []
-        for order_id in dict.fromkeys(m.upper() for m in ORDER_ID_RE.findall(text)):
-            facts.append(as_text(self.tools["get_order"].invoke({"order_id": order_id})))
-        return {"steps": ["lookup"],
-                "messages": [SystemMessage(content="ORDER FACTS:\n" + "\n".join(facts))]
-                if facts else []}
+        # The regex pre-fetch is deliberately disabled: handing the model the full
+        # order JSON up front removes any reason for it to call a tool, which
+        # suppresses the node_act loop entirely. The model fetches orders itself now.
+        # TODO 6a turns this node into real triage.
+        return {"steps": ["lookup"]}
 
     def node_retrieve(self, state):
         """Search the handbook using the customer's message, word for word.
@@ -198,7 +200,43 @@ class SupportGraph:
         raises an error. Catch all three and put the problem back into the
         conversation so the model can try something else.
         """
-        raise NotImplementedError("TODO 4 — see the docstring")
+        model = llm.chat_model().bind_tools(list(self.tools.values()))
+        step = state.get("tool_steps", 0)
+
+        context = "\n\n".join(
+            f"[section: {h['doc_id']}]\n{h['title']}\n{h['text'].strip()}"
+            for h in state.get("hits", [])) or "(nothing retrieved)"
+        preamble = [
+            SystemMessage(content=SYSTEM_PROMPT),
+            SystemMessage(content=policy.wrap_untrusted(
+                "knowledge_base", f"CONTEXT:\n{context}")),
+        ]
+
+        fresh = []
+        if step == 0:
+            turns = "\n".join(f"{h.get('role', 'user')}: {as_text(h.get('content'))}"
+                              for h in state.get("history", []))
+            fresh.append(HumanMessage(content="\n\n".join(filter(None, [
+                f"CONVERSATION SO FAR:\n{turns}" if turns else "",
+                f"CUSTOMER (id={state.get('customer_id') or 'not signed in'}) ASKS:\n"
+                f"{as_text(state['query'])}"]))))
+
+        reply = model.invoke(preamble + list(state.get("messages", [])) + fresh)
+        fresh.append(reply)
+
+        for call in reply.tool_calls:
+            result = self.tools[call["name"]].invoke(call["args"])
+            fresh.append(ToolMessage(content=as_text(result), tool_call_id=call["id"]))
+
+        return {"steps": ["act"], "messages": fresh, "tool_steps": 1}
+
+    def route_after_act(self, state):
+        if state.get("tool_steps", 0) >= config.MAX_TOOL_STEPS:
+            return "respond"
+        last_ai = next((m for m in reversed(state["messages"])
+                        if isinstance(m, AIMessage)), None)
+        return "act" if (last_ai is not None and last_ai.tool_calls) else "respond"
+
 
     def node_verify(self, state):
         """TODO 3 — check the answer is actually supported before sending it. Lecture 6.
@@ -241,13 +279,21 @@ class SupportGraph:
 
         order_facts = "\n".join(as_text(m.content) for m in state.get("messages", [])
                                 if isinstance(m, SystemMessage))
+        tool_results = "\n\n".join(as_text(m.content) for m in state.get("messages", [])
+                                           if isinstance(m, ToolMessage))
+        tool_results_section = f"TOOL RESULTS:\n{tool_results}" if tool_results else ""
+
+        
         turns = "\n".join(f"{h.get('role', 'user')}: {as_text(h.get('content'))}"
                           for h in state.get("history", []))
+        
+
 
         user = "\n\n".join(filter(None, [
             f"CONVERSATION SO FAR:\n{turns}" if turns else "",
             policy.wrap_untrusted("knowledge_base", f"CONTEXT:\n{context}"),
             order_facts,
+            tool_results_section,
             f"CUSTOMER (id={state.get('customer_id') or 'not signed in'}) ASKS:\n"
             f"{as_text(state['query'])}"]))
 

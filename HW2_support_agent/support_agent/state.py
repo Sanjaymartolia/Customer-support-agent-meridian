@@ -27,6 +27,7 @@ class SupportState(TypedDict, total=False):
     messages: Annotated[list[AnyMessage], operator.add]
     hits: list                          # retrieval Hits, as dicts
     steps: Annotated[list[str], operator.add]   # node names, in order visited
+    tool_steps: Annotated[int, operator.add]     # each pass returns 1; LangGraph sums them
 
     # --- outputs (these become the trace) -------------------------------------
     answer: str
